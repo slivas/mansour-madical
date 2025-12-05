@@ -425,6 +425,10 @@ button {
 .header__logo {
   height: 100%;
 }
+.header__logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 @media (max-width: 1023px) {
   .header__nav {
     position: fixed;
@@ -527,7 +531,6 @@ button {
   width: 100%;
   height: 100%;
   background: linear-gradient(282deg, rgba(21, 21, 21, 0) 30.35%, rgba(0, 0, 0, 0.6) 90.59%);
-  filter: blur(8.5px);
   z-index: -1;
 }
 .hero__banner-title-wrapper {

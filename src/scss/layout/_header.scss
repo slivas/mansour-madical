@@ -37,6 +37,10 @@
 
   &__logo {
     height: 100%;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   &__nav {
