@@ -1,0 +1,40 @@
+.section__faq {
+  h2 {
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      position: sticky;
+      top: 60px;
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      grid-column-gap: 16px;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 370px 1fr;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 446px 1fr;
+    }
+  }
+  
+  .accordion {
+    @media (min-width: 1280px) {
+      align-items: flex-end;
+    }
+
+    &-item {
+      @media (min-width: 1280px) {
+        width: 100%;
+        max-width: 800px;
+      }
+    }
+  }
+}

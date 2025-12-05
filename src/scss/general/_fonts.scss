@@ -1,0 +1,136 @@
+@use "../general/var";
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/dist/fonts/outfit-v15-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/dist/fonts/outfit-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/dist/fonts/outfit-v15-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/dist/fonts/outfit-v15-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/dist/fonts/quicksand-v37-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/dist/fonts/quicksand-v37-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/dist/fonts/quicksand-v37-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Alexandria';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/dist/fonts/alexandria-v6-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Alexandria';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/dist/fonts/alexandria-v6-latin-regular.woff2') format('woff2');
+}
+
+body {
+  font: {
+    family: "Outfit", sans-serif;
+    feature-settings: 'liga' off, 'clig' off;
+    optical-sizing: auto;
+    style: normal;
+    size: 16px;
+    variant-numeric: lining-nums tabular-nums;
+  }
+}
+
+.font-quicksand {
+  font: {
+    family: 'Quicksand', sans-serif;
+  }
+}
+
+.font-alexandria {
+  font: {
+    family: "Alexandria", sans-serif;
+  }
+}
+
+h1, h2 {
+  color: var.$accentColor;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: .9;
+}
+
+h1 {
+  font: {
+    size: 40px;
+    weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 88px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 100px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 128px;
+  }
+}
+
+h2 {
+  font: {
+    size: 36px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 64px;
+  }
+}

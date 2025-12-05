@@ -1,0 +1,15 @@
+@use "../general/var";
+
+.icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var.$green;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}

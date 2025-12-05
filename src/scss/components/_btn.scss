@@ -1,0 +1,36 @@
+@use "../general/var";
+
+.btn {
+  display: inline-flex;
+  padding: 10px 42px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  font: {
+    size: 16px;
+    weight: 500;
+  };
+  line-height: normal;
+  transition-duration: .25s;
+  transition-property: background-color;
+
+  @media (min-width: 1024px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-right: 62px;
+    padding-left: 62px;
+  }
+
+  &-primary {
+    background-color: var.$primaryBtn;
+    color: var.$darkGreen;
+
+    &:hover {
+      background-color: var.$accentColor;
+    }
+  }
+}

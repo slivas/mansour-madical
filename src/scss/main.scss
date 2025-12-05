@@ -1,0 +1,22 @@
+@use "general/reset";
+@use "general/fonts";
+@use "general/var";
+@use "general/general";
+
+@use "components/btn";
+@use "components/nav-toggle";
+@use "components/icon";
+@use "components/accordion";
+
+@use "layout/header";
+@use "layout/hero";
+@use "layout/problems";
+@use "layout/services";
+@use "layout/treatment";
+@use "layout/about";
+@use "layout/reviews";
+@use "layout/cta";
+@use "layout/faq";
+@use "layout/footer";
+@use "layout/form";
+@use "layout/thank-you";
