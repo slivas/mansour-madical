@@ -426,6 +426,7 @@ button {
   height: 100%;
 }
 .header__logo img {
+  width: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
